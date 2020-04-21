@@ -13,7 +13,7 @@ $s_plugin_LdapCacheFields_description = 'Load in cache some other user attribute
 # Config page
 $s_plugin_LdapCacheFields_config = 'Configuration';
 $s_plugin_LdapCacheFields_subject_fields = 'User attribute fields';
-$s_plugin_LdapCacheFields_default_fields = 'o, email';
+$s_plugin_LdapCacheFields_default_fields = 'o, postalAddress, telephoneNumber';
 
 $s_plugin_LdapCacheFields_reset_template = 'Revert to Default Values';
 
