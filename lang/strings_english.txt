@@ -1,0 +1,19 @@
+<?php
+/**
+ * LdapCacheFields Plugin for MantisBT
+ * @link https://github.com/Association-cocktail/LdapCacheFields
+ *
+ * @author    Marc-Antoine TURBET-DELOF<marc-antoine.turbet-delof@asso-cocktail.fr>
+ * @copyright Copyright (c) 2020 Association Cocktail, Marc-Antoine TURBET-DELOF
+ */
+
+$s_plugin_LdapCacheFields_title = 'LdapCacheFields';
+$s_plugin_LdapCacheFields_description = 'Load in cache some other user attributes';
+
+# Config page
+$s_plugin_LdapCacheFields_config = 'Configuration';
+$s_plugin_LdapCacheFields_subject_fields = 'User attribute fields';
+$s_plugin_LdapCacheFields_default_fields = 'o, email';
+
+$s_plugin_LdapCacheFields_reset_template = 'Revert to Default Values';
+
