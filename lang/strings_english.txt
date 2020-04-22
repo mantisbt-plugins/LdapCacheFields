@@ -12,7 +12,6 @@ $s_plugin_LdapCacheFields_description = 'Load in cache some other user attribute
 
 # Config page
 $s_plugin_LdapCacheFields_config = 'Configuration';
-$s_plugin_LdapCacheFields_update_config = 'Update Configuration';
 $s_plugin_LdapCacheFields_config_existing = 'Existing Fields';
 $s_plugin_LdapCacheFields_config_new_field = 'Add New Field';
 $s_plugin_LdapCacheFields_config_save_field = 'Save Field';
@@ -23,8 +22,4 @@ $s_plugin_LdapCacheFields_config_field_name = 'LDAP Field Name';
 $s_plugin_LdapCacheFields_config_field_title = 'Showable name';
 $s_plugin_LdapCacheFields_config_field_action = 'Action';
 $s_plugin_LdapCacheFields_no_fields_configured = 'No fields have been configured';
-$s_plugin_LdapCacheFields_subject_fields = 'User attribute fields';
-$s_plugin_LdapCacheFields_default_fields = 'o, postalAddress, telephoneNumber';
-
-$s_plugin_LdapCacheFields_reset_template = 'Revert to Default Values';
 
