@@ -29,7 +29,7 @@ The plugin requires this [MantisBT pull request](https://github.com/mantisbt/man
 
 The list of additional user's attributes from LDAP fields can be defined on the plugin's config page.
 
-It is a comma separated list.
+Specify, for each field, the showable name. It will be displayed in profile user page.
 
 ## Support
 
