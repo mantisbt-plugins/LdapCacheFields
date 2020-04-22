@@ -70,7 +70,7 @@ $t_form_security_field  = form_security_field( 'plugin_LdapCacheFields_config_ed
         <div class="widget-box widget-color-blue2">
             <div class="widget-header widget-header-small">
                 <h4 class="widget-title lighter">
-                    <i class="ace-icon fa fa-file"></i>
+                    <i class="ace-icon fa fa-th-list"></i>
                     <?php echo plugin_lang_get('title') . ': ' . plugin_lang_get('config_existing') ?>
                 </h4>
             </div>
