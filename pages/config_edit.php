@@ -4,7 +4,7 @@
  * @link https://github.com/Association-cocktail/LdapCacheFields
  *
  * @author    Marc-Antoine TURBET-DELOF<marc-antoine.turbet-delof@asso-cocktail.fr>
- * @copyright Copyright (c ) 2020 Association Cocktail, Marc-Antoine TURBET-DELOF
+ * @copyright Copyright (c) 2020 Association Cocktail, Marc-Antoine TURBET-DELOF
  */
 
 form_security_validate( 'plugin_LdapCacheFields_config_edit' );
