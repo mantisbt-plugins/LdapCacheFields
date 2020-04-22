@@ -41,17 +41,37 @@ class LdapCacheFieldsPlugin extends MantisPlugin {
         );
     }
 
-	function fields( $p_event ) {
-		$t_fields_string = plugin_config_get( 'fields' );
-		$t_fields_array = array();
+	function schema() {
+		return array(
+            array('CreateTableSQL',
+                array( plugin_table('field', 'LdapCacheFields'), "
+                    id                 I       NOTNULL UNSIGNED AUTOINCREMENT PRIMARY,
+                    title              C(32)   NOTNULL DEFAULT '',
+                    name               C(32)   NOTNULL DEFAULT ''"
+                )
+            )
+		);
+	}
 
-		$t_fields_array = explode( ',', $t_fields_string );
-		return array_map( 'trim', $t_fields_array );
+	function fields( $p_event ) {
+		$t_field_table = plugin_table('field');
+		$t_fields_array = array();
+		$t_query = "SELECT name
+		            FROM $t_field_table";
+		$t_result = db_query($t_query);
+		while( $t_row = db_fetch_array( $t_result ) ) {
+			array_push( $t_fields_array, $t_row['name'] );
+		}
+		return $t_fields_array;
 	}
 
 	function display( $p_event, $p_username ) {
-		foreach ( $this->fields( '' ) as $ldap_field ) {
-			echo '<tr><th class="category">' . $ldap_field . '</th><td>' . ldap_get_field_from_username( $p_username, $ldap_field ) . '</td></tr>';
+		$t_field_table = plugin_table('field');
+		$t_query = "SELECT name,title
+		            FROM $t_field_table";
+		$t_result = db_query($t_query);
+		while( $t_row = db_fetch_array( $t_result ) ) {
+			echo '<tr><th class="category">' . $t_row['title'] . '</th><td>' . ldap_get_field_from_username( $p_username, $t_row['name'] ) . '</td></tr>';
 		}
 	}
 }
