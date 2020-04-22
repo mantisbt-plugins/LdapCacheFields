@@ -1,0 +1,25 @@
+<?php
+/**
+ * LdapCacheFields Plugin for MantisBT
+ * @link https://github.com/Association-cocktail/LdapCacheFields
+ *
+ * @author    Marc-Antoine TURBET-DELOF<marc-antoine.turbet-delof@asso-cocktail.fr>
+ * @copyright Copyright (c) 2020 Association Cocktail, Marc-Antoine TURBET-DELOF
+ */
+
+$s_plugin_LdapCacheFields_title = 'LdapCacheFields';
+$s_plugin_LdapCacheFields_description = 'Charger des attributs complémentaire d\'un utilisateur dans le cache';
+
+# Config page
+$s_plugin_LdapCacheFields_config = 'Configuration';
+$s_plugin_LdapCacheFields_config_existing = 'Champs existants';
+$s_plugin_LdapCacheFields_config_new_field = 'Ajouter un champ';
+$s_plugin_LdapCacheFields_config_save_field = 'Enregistrer';
+$s_plugin_LdapCacheFields_config_delete_field = 'Supprimer';
+$s_plugin_LdapCacheFields_new_field_name = 'Nom du champ LDAP';
+$s_plugin_LdapCacheFields_new_field_title = 'Nom d\'affichage';
+$s_plugin_LdapCacheFields_config_field_name = 'Nom du champ LDAP';
+$s_plugin_LdapCacheFields_config_field_title = 'Nom d\'affichage';
+$s_plugin_LdapCacheFields_config_field_action = 'Action';
+$s_plugin_LdapCacheFields_no_fields_configured = 'Aucun champ configuré';
+
