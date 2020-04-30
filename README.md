@@ -31,6 +31,12 @@ The list of additional user's attributes from LDAP fields can be defined on the 
 
 Specify, for each field, the showable name. It will be displayed in profile user page.
 
+## Screen Shots
+
+![add field](screenshots/add_field.png "To add new field")
+
+![edit fields](screenshots/edit_fields.png "To edit existing fields")
+
 ## Support
 
 If you wish to file a
