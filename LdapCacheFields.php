@@ -28,12 +28,6 @@ class LdapCacheFieldsPlugin extends MantisPlugin {
 		$this->url = 'https://asso-cocktail.fr';            # Support webpage
     }
 
-	public function config() {
-		return array(
-			'fields' => plugin_lang_get( 'default_fields' ),
-		);
-	}
-
 	function hooks() {
         return array(
             'EVENT_LDAP_USER_FIELDS' => 'fields',
