@@ -37,6 +37,10 @@ Specify, for each field, the showable name. It will be displayed in profile user
 
 ![edit fields](screenshots/edit_fields.png "To edit existing fields")
 
+![my account](screenshots/my_account.png "Displayed in my account")
+
+![user account](screenshots/user_account.png "Displayed in user account")
+
 ## Support
 
 If you wish to file a
