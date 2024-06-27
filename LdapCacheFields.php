@@ -17,9 +17,9 @@ class LdapCacheFieldsPlugin extends MantisPlugin {
 		$this->description = plugin_lang_get( 'description' );    # Short description of the plugin
 		$this->page = 'config_page';           # Default plugin page
 
-		$this->version = '0.3';     # Plugin version string
+		$this->version = '0.4';     # Plugin version string
 		$this->requires = array(    # Plugin dependencies
-		    'MantisCore' => '2.24',  # Should always depend on an appropriate
+		    'MantisCore' => '2.26',  # Should always depend on an appropriate
 		                            # version of MantisBT
 		);
 
@@ -61,12 +61,18 @@ class LdapCacheFieldsPlugin extends MantisPlugin {
 
 	function display( $p_event, $p_username ) {
 		$t_field_table = plugin_table('field');
+		$t_fields_array = array();
 		$t_query = "SELECT name,title
 		            FROM $t_field_table";
 		$t_result = db_query($t_query);
 		while( $t_row = db_fetch_array( $t_result ) ) {
-			echo '<tr><th class="category">' . $t_row['title'] . '</th><td>' . ldap_get_field_from_username( $p_username, $t_row['name'] ) . '</td></tr>';
+			array_push($t_fields_array,
+						array('title' => $t_row['title'],
+						      'value' => ldap_get_field_from_username( $p_username, $t_row['name'])
+						)
+			);
 		}
+		return $t_fields_array;
 	}
 }
 
