@@ -17,9 +17,9 @@ class LdapCacheFieldsPlugin extends MantisPlugin {
 		$this->description = plugin_lang_get( 'description' );    # Short description of the plugin
 		$this->page = 'config_page';           # Default plugin page
 
-		$this->version = '0.4';     # Plugin version string
+		$this->version = '0.5';     # Plugin version string
 		$this->requires = array(    # Plugin dependencies
-		    'MantisCore' => '2.26',  # Should always depend on an appropriate
+		    'MantisCore' => '2.28',  # Should always depend on an appropriate
 		                            # version of MantisBT
 		);
 
@@ -30,8 +30,7 @@ class LdapCacheFieldsPlugin extends MantisPlugin {
 
 	function hooks() {
         return array(
-            'EVENT_LDAP_USER_FIELDS' => 'fields',
-			'EVENT_USER_ADDITIONAL_ATTRIBUTES' => 'display'
+            'EVENT_LDAP_CACHE_ATTRS' => 'fields'
         );
     }
 
@@ -59,20 +58,5 @@ class LdapCacheFieldsPlugin extends MantisPlugin {
 		return $t_fields_array;
 	}
 
-	function display( $p_event, $p_username ) {
-		$t_field_table = plugin_table('field');
-		$t_fields_array = array();
-		$t_query = "SELECT name,title
-		            FROM $t_field_table";
-		$t_result = db_query($t_query);
-		while( $t_row = db_fetch_array( $t_result ) ) {
-			array_push($t_fields_array,
-						array('title' => $t_row['title'],
-						      'value' => ldap_get_field_from_username( $p_username, $t_row['name'])
-						)
-			);
-		}
-		return $t_fields_array;
-	}
 }
 

@@ -29,17 +29,13 @@ The plugin requires this [MantisBT pull request](https://github.com/mantisbt/man
 
 The list of additional user's attributes from LDAP fields can be defined on the plugin's config page.
 
-Specify, for each field, the showable name. It will be displayed in profile user page.
+Specify, for each field, the showable name.
 
 ## Screen Shots
 
 ![add field](screenshots/add_field.png "To add new field")
 
 ![edit fields](screenshots/edit_fields.png "To edit existing fields")
-
-![my account](screenshots/my_account.png "Displayed in my account")
-
-![user account](screenshots/user_account.png "Displayed in user account")
 
 ## Support
 
