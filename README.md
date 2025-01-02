@@ -12,7 +12,7 @@ allows the administrator to add some LDAP fields to in cached users attributes.
 
 ### Requirements
 
-The plugin requires this [MantisBT pull request](https://github.com/mantisbt/mantisbt/pull/1660).
+The plugin requires [#2053](https://github.com/mantisbt/mantisbt/pull/2053) (to be included in MantisBT 2.28.0).
 
 ### Setup Instructions
 
