@@ -17,7 +17,7 @@ The plugin requires [#2053](https://github.com/mantisbt/mantisbt/pull/2053) (to 
 ### Setup Instructions
 
 1. Download or clone a copy of the 
-   [plugin's code](https://github.com/Association-Cocktail/LdapCacheFields).
+   [plugin's code](https://github.com/mantisbt-plugins/LdapCacheFields).
 2. Copy the plugin (the `LdapCacheFields/` directory) into your Mantis
    installation's `plugins/` directory.
 3. While logged in as an administrator, go to *Manage → Manage Plugins*.
@@ -40,14 +40,14 @@ Specify, for each field, the showable name.
 ## Support
 
 If you wish to file a
-[bug report](https://github.com/Association-Cocktail/LdapCacheFields/issues/new),
+[bug report](https://github.com/mantisbt-plugins/LdapCacheFields/issues/new),
 or have questions related to use and installation, please use the plugin's
-[issues tracker](https://github.com/Association-Cocktail/LdapCacheFields/issues)
+[issues tracker](https://github.com/mantisbt-plugins/LdapCacheFields/issues)
 on GitHub.
 
 All code contributions (bug fixes, new features and enhancements, translations) 
 are welcome and highly encouraged, preferably as a
-[Pull Request](https://github.com/Association-Cocktail/LdapCacheFields/compare).
+[Pull Request](https://github.com/mantisbt-plugins/LdapCacheFields/compare).
 
 The latest source code is available on
-[GitHub](https://github.com/Association-Cocktail/LdapCacheFields).
+[GitHub](https://github.com/mantisbt-plugins/LdapCacheFields).

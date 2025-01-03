@@ -1,7 +1,7 @@
 <?php
 /**
  * LdapCacheFields Plugin for MantisBT
- * @link https://github.com/Association-cocktail/LdapCacheFields
+ * @link https://github.com/mantisbt-plugins/LdapCacheFields
  *
  * @author    Marc-Antoine TURBET-DELOF<marc-antoine.turbet-delof@asso-cocktail.fr>
  * @copyright Copyright (c) 2020 Association Cocktail, Marc-Antoine TURBET-DELOF
